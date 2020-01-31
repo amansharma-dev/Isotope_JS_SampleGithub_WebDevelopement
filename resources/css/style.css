@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body{
+    background-color: #fff;
+    color: #535c68;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row
+{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+p{
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    line-height: 145%;    
+}
+
+.home-screen a{
+    text-decoration: none;
+    color: #2bcbba;
+}
+
+.home-screen a:link,
+.home-screen a:visited{
+    
+}
+
+.home-screen a:hover,
+.home-screen a:active{
+    color: #0fb9b1;
+    font-size: 150%;
+}
+
+.home-screen a:before{
+    content: " "
+}
+
+header{
+    height: 100vh;
+}
+
+.home-screen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.section-01{
+    background-color: #d1d8e0;
+}
+
+.section-01 h2{
+    font-size: 250%;
+    padding-bottom: 15px;
+}
+
+.filter{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.filter a{
+    text-decoration: none;
+    text-align:center;
+    display: block;
+    border: 2px solid #000;
+    padding: 10px 18px;
+    color: #000;
+}
+
+.filter li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.filter .current{
+    text-decoration: none;
+    background-color: #2bcbba;
+    color: #fff;
+}
+.container{
+    height: auto;
+    overflow-y: hidden;
+    overflow: hidden;
+}
+
+.items
+{
+    padding: 0;
+}
+
+.items li{
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.item{
+    width: 100%;
+    padding: 0;
+    overflow: hidden;    
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+}
+
+.items .item{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+
+.items .icons{
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: -20px auto 0 -47px;
+    text-align: center;
+    z-index: 30;
+}
+
+.items .icons i{
+  color:#fff;
+  font-size: 20px;
+  margin-top: 9px;
+}
+
+.items a{
+  width: 40px;
+  height: 40px;
+  background-color:#2bcbba;
+  position: relative;
+  display: inline-block;
+
+  -webkit-transition: all 0.2s linear,0.7s;
+    -moz-transition: all 0.2s linear, 0.7s;
+    -o-transition: all 0.2s linear, 0.7s;
+    -ms-transition: all 0.2s linear, 0.7s;
+    -transition: all 0.2s linear, 0.7s;
+}
+
+.items .imageOverlay{
+   width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+
+    -webkit-transition: all 0.2s linear,1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
+}
+
+.items .item:hover .imageOverlay{
+  opacity: 1;
+}
+
+.items .openImage{
+  float:left;
+  left: -200px;
+}
+
+.items .projectLink{
+  float:right;
+  right:-200px;
+}
+
+.items .item:hover .openImage{
+  left:0px;
+}
+
+.items .item:hover .projectLink{
+  right:0px;
+}
+
+.items .item:hover img{
+  -webkit-transform:scale(1.05,1.05);
+  -ms-transform:scale(1.05,1.05);
+  -o-transform:scale(1.05,1.05);
+  -moz-transform:scale(1.05,1.05);
+  -transform:scale(1.05,1.05);
+}
